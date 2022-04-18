@@ -1,0 +1,22 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Assignment</title>
+  </head>
+  <body>
+
+<style >
+  p {
+  color: red;
+  text-align: center;
+  }
+</style>
+     <p>
+This is supposed to be red text.
+    </p>
+
+
+
+  </body>
+</html>
