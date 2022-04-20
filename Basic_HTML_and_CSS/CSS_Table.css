@@ -1,0 +1,52 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fifa Player's Table</title>
+  </head>
+  <body>
+
+<link rel="stylesheet" type="text/css" href="HTML_Table.html">
+
+    <style>
+
+      .My_Style {
+
+    background-color: Aquamarine;
+    text-color: Beige;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: medium;
+    }
+
+    </style>
+
+<table>
+  <table style="width:100%">
+    <tr>
+      <th> Name </th>
+      <th> Position </th>
+      <th> Best Stats </th>
+      <th> Good Links </th>
+      <th> Similar Players </th>
+      <th> Chem Style </th>
+      <th> Traits </th>
+    </tr>
+</table>
+
+<style media="screen">
+
+table {border: 1px AliceBlue;}
+
+td:hover {background-color: Brown;
+color:Bisque;}
+
+tr, th {background-color: Black;
+color: BlueViolet;}
+
+tr, td {background-color: Chartreuse;
+color: Chocolate}
+</style>
+
+  </body>
+</html>
