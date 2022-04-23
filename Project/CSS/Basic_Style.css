@@ -26,6 +26,12 @@ Select All Squares in the Array
 -------------------------------- */
 container .squares:nth-child(-n+4) {
     background-image: url("../images/Thumb/Icon_Smiley_Open.png")
+    color: #fff;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    
 }
 
 
