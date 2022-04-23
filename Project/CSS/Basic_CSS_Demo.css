@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+<div>
+  <h1>Basic CSS DEMO</h1>
+</div>
+
+<div class="container">
+
+  <div class="squares">
+    <p>Box 1</p>
+
+    <div class="squares">
+      <p>Box 2</p>
+
+      <div class="squares">
+        <p>Box 3</p>
+
+        <div class="squares">
+          <p>Box 4</p>
+
+  </div>
+</div>
+
+  </body>
+</html>
