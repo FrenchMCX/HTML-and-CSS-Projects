@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body> {background-color: #fff;}
+body {background-color: #fff;}
 
   h1 {
       color: rgba(8, 141, 165, 1);
@@ -24,8 +18,8 @@ border-radius: 54;
 /* -----------------------------
 Select All Squares in the Array
 -------------------------------- */
-container .squares:nth-child(-n+4) {
-    background-image: url("../Images/Thumb/Icon_Smiley_Open.png")
+.container .squares:nth-child(-n+4) {
+    background-image: url("../Images/Thumb/Icon_Smiley_Open.png");
     color: #fff;
     float: left;
     width: 100px;
@@ -34,9 +28,6 @@ container .squares:nth-child(-n+4) {
     border: 1px solid black;
     border-radius: 25%;
     cursor: pointer;
-    transition-property: ;
-    transition-duration: ;
-    transition-delay: ;
     transition: transform .5s ease-in-out;
 }
 /* -----------------------------
@@ -45,7 +36,7 @@ Select All Squares Paragraphs in the Array
 
 .squares:nth-child(-n+4) p{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1.5cm;
+  font-size: 1.5em;
   font-weight: 900;
   text-align: center;
   margin: 0;
@@ -99,7 +90,7 @@ Hover effects
 
 .button:hover {
 background-color: #33fb14;
-color: #fff
+color: #fff;
 cursor: pointer;
 }
 
@@ -112,8 +103,3 @@ cursor: pointer;
     transform: translateY(330px);
   }
 }
-  </div>
-</div>
-
-  </body>
-</html>
