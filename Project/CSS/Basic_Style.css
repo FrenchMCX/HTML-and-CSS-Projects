@@ -11,7 +11,7 @@ width: 450px;
 height: 450px;
 background-color: #faebd7;
 border: 2px solid black;
-border-radius: 54;
+border-radius: 5%;
 
 }
 
@@ -88,16 +88,10 @@ Hover effects
   background: #77b800;
 }
 
-.button:hover {
-background-color: #33fb14;
-color: #fff;
-cursor: pointer;
-}
-
 @keyframes race {
   0%, 100% {
     transform: translateY(0px);
-    background-image: url("..Images/Thumb/Icon_Smiley_Closed.png");
+    background-image: url("..Images/Thumb/Icon_Smiley_Open.png");
   }
   50% {
     transform: translateY(330px);

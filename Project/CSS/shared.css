@@ -30,7 +30,7 @@ h1 {
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
-    color: #E91C1C
+    color: #E91C1C;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -138,7 +138,12 @@ section {
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-
-
-
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    display:block;
+    height: auto;
+    padding-top: 350px;
+    padding-bottom: 500px;
+    color: #fff;
 }
