@@ -1,5 +1,15 @@
 .border {
-    border-width: 5px;
+    border-width: 2px;
     border-color: red;
     border-style: dashed;
+}
+
+.header3 {
+    color: darkblue;
+    text-align: center;
+}
+
+#header3 {
+    color: darkblue;
+    text-align: center;
 }
