@@ -3,7 +3,7 @@ This repository was made to store my current and future HTML and CSS Projects.
 
 * [Fifa Team Website](https://github.com/FrenchMCX/HTML-and-CSS-Projects/tree/main/Project)
 * [Movie Theater Website](https://github.com/FrenchMCX/HTML-and-CSS-Projects/tree/main/bootstrap4_project)
-* [Portfolio Website](https://github.com/FrenchMCX/HTML-and-CSS-Projects/tree/main/Portfolio%20Project)
+* [Portfolio Website](https://frenchmcx.github.io/Portfolio/#GitHub)
 
 ## Fifa Team Website
 This page is an example home page for a Fifa Team. It's styled using CSS and contains a navbar, image container, and a form.
