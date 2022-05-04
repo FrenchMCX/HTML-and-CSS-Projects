@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Fifa Team Project</title>
     <link rel="stylesheet" href="./CSS/one_page_website.css">
+    <script src="./JS/one_page_website.js"></script>
 
   <nav>
     <div>
@@ -21,7 +22,7 @@
           </a>
         </ul>
       </div>
-    </div
+    </div>
     </nav>
     </head>
 
@@ -42,162 +43,154 @@
     <div id="Gallery">
       <h1>Gallery</h1>
 
-      <!--Photo Container 1-->
-      <section>
-        <div>
-          <div>
-            <div>
-              <img src="./Images/Thumb/Thumb_1.png" alt="Gabriel Jesus" height="200" width="200">
-              <div>
-                <h3>Click Player to Enlarge</h3>
-                <p> This player is one of the starting 11! </p>
-              </div>
-            </div>
+      <!-- Images used to open the lightbox -->
+      <div class="row">
+        <div class="column">
+          <img src="./Images/Thumb/Thumb_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="./Images/Thumb/Thumb_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="./Images/Thumb/Thumb_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="./Images/Thumb/Thumb_4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="./Images/Thumb/Thumb_5.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="./Images/Thumb/Thumb_6.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="./Images/Thumb/Thumb_7.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="./Images/Thumb/Thumb_8.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="./Images/Thumb/Thumb_9.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="./Images/Thumb/Thumb_10.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="./Images/Thumb/Thumb_11.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+      </div>
+      
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 11</div>
+            <img src="./Images/Thumb/Thumb_1.png" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 11</div>
+            <img src="./Images/Thumb/Thumb_2.png" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 11</div>
+            <img src="./Images/Thumb/Thumb_3.png" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">4 / 11</div>
+            <img src="./Images/Thumb/Thumb_4.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">5 / 11</div>
+            <img src="./Images/Thumb/Thumb_5.png" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">6 / 11</div>
+            <img src="./Images/Thumb/Thumb_6.png" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">7 / 11</div>
+            <img src="./Images/Thumb/Thumb_7.png" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">8 / 11</div>
+            <img src="./Images/Thumb/Thumb_8.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">9 / 11</div>
+            <img src="./Images/Thumb/Thumb_9.png" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">10 / 11</div>
+            <img src="./Images/Thumb/Thumb_10.png" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">11 / 11</div>
+            <img src="./Images/Thumb/Thumb_11.png" style="width:100%">
+          </div>
+        
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+          <!-- Thumbnail image controls -->
+          <div class="column">
+            <img class="demo" src="./Images/Thumb/Thumb_1.png" onclick="currentSlide(1)" alt="Gabriel Jesus">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="./Images/Thumb/Thumb_2.png" onclick="currentSlide(2)" alt="Alexandre Pato">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="./Images/Thumb/Thumb_3.png" onclick="currentSlide(3)" alt="Neymar Jr">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="./Images/Thumb/Thumb_4.png" onclick="currentSlide(4)" alt="Philippe Countinho">
+          </div>
+          <div class="column">
+            <img class="demo" src="./Images/Thumb/Thumb_5.png" onclick="currentSlide(5)" alt="Rodrygo">
+          </div>
+          
+          <div class="column">
+            <img class="demo" src="./Images/Thumb/Thumb_6.png" onclick="currentSlide(6)" alt="Allan">
+          </div>
+          
+          <div class="column">
+            <img class="demo" src="./Images/Thumb/Thumb_7.png" onclick="currentSlide(7)" alt="Marcelo">
+          </div>
+          
+          <div class="column">
+            <img class="demo" src="./Images/Thumb/Thumb_8.png" onclick="currentSlide(8)" alt="Thiago Silva">
+          </div>
+          <div class="column">
+            <img class="demo" src="./Images/Thumb/Thumb_9.png" onclick="currentSlide(9)" alt="Joe Gomez">
+          </div>
+          
+          <div class="column">
+            <img class="demo" src="./Images/Thumb/Thumb_10.png" onclick="currentSlide(10)" alt="Dani Alves">
+          </div>
+          
+          <div class="column">
+            <img class="demo" src="./Images/Thumb/Thumb_11.png" onclick="currentSlide(11)" alt="Jerzy Dudek">
           </div>
         </div>
-      </section>
-      <!-- Photo Container 2-->
-      <section>
-        <div>
-          <div>
-            <div>
-              <img src="./Images/Thumb/Thumb_2.png" alt="Alexandre Pato" height="200" width="200">
-              <div>
-                <h3>Click Player to Enlarge</h3>
-                <p> This player is one of the starting 11! </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Photo Container 3 -->
-      <section>
-        <div>
-          <div>
-            <div>
-              <img src="./Images/Thumb/Thumb_3.png" alt="Neymar Jr" height="200" width="200">
-              <div>
-                <h3>Click Player to Enlarge</h3>
-                <p> This player is one of the starting 11! </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Photo Container 4 -->
-      <section>
-        <div>
-          <div>
-            <div>
-              <img src="./Images/Thumb/Thumb_4.png" alt="Philippe Coutinho" height="200" width="200">
-              <div>
-                <h3>Click Player to Enlarge</h3>
-                <p> This player is one of the starting 11! </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Photo Container 5 -->
-      <section>
-        <div>
-          <div>
-            <div>
-              <img src="./Images/Thumb/Thumb_5.png" alt="Rodrygo" height="200" width="200">
-              <div>
-                <h3>Click Player to Enlarge</h3>
-                <p> This player is one of the starting 11! </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Photo Container 6 -->
-      <section>
-        <div>
-          <div>
-            <div>
-              <img src="./Images/Thumb/Thumb_6.png" alt="Allan" height="200" width="200">
-              <div>
-                <h3>Click Player to Enlarge</h3>
-                <p> This player is one of the starting 11! </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Photo Container 7 -->
-      <section>
-        <div>
-          <div>
-            <div>
-              <img src="./Images/Thumb/Thumb_7.png" alt="Marcelo" height="200" width="200">
-              <div>
-                <h3>Click Player to Enlarge</h3>
-                <p> This player is one of the starting 11! </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Photo Container 8 -->
-      <section>
-        <div>
-          <div>
-            <div>
-              <img src="./Images/Thumb/Thumb_8.png" alt="Thiago Silva" height="200" width="200">
-              <div>
-                <h3>Click Player to Enlarge</h3>
-                <p> This player is one of the starting 11! </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Photo Container 9 -->
-      <section>
-        <div>
-          <div>
-            <div>
-              <img src="./Images/Thumb/Thumb_9.png" alt="Joe Gomez" height="200" width="200">
-              <div>
-                <h3>Click Player to Enlarge</h3>
-                <p> This player is one of the starting 11! </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Photo Container 10 -->
-      <section>
-        <div>
-          <div>
-            <div>
-              <img src="./Images/Thumb/Thumb_10.png" alt="Dani Alves" height="200" width="200">
-              <div>
-                <h3>Click Player to Enlarge</h3>
-                <p> This player is one of the starting 11! </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Photo Container 11 -->
-      <section>
-        <div>
-          <div>
-            <div>
-              <img src="./Images/Thumb/Thumb_11.png" alt="Jerzy Dudek" height="200" width="200">
-              <div>
-                <h3>Click Player to Enlarge</h3>
-                <p> This player is one of the starting 11! </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--End Photo Container-->
-
+      </div>
       <!--End Gallery-->
 
       <!-- Section for Videos -->
