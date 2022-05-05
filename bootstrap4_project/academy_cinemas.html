@@ -34,7 +34,10 @@
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-primary my-2 my-sm-0 text-light" type="submit">Search</button>
+                    <!--This tool tip informs users to type clearly for search-->
+                <button type="button" class="btn btn-primary search" id="search" data-toggle="tooltip" data-placement="top" title="Be sure to type clearly for search!">
+                    Search
+                </button>
                 </form>
             </div>
         </nav>
@@ -143,6 +146,19 @@
 </div>
         <!-- /Showtimes -->
 
+<div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+    <div class="container">
+
+        <h1 class="display-4 hidden-sm-down" style="color:#fff;font-family:roboto;font-weight:900;text-transform:uppercase;">Movie Deals</h1>
+
+        <p class="lead">Check out our monthly deals...</p>
+
+        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>
+
+    </div>
+</div>
+
+
         <div id="deals" class="text-center">
             <form>
                 <h1 class="text-primary my-5">Sign up for Movie Club Rewards!</h1>
@@ -150,9 +166,51 @@
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                         placeholder="Enter email">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top"
+                data-content="Submit your email to receive great movie reward deals!">
+                Sign Up!
+            </button>
             </form>
         </div>
+
+        <!--Form Modal-->
+        <div class="modal" tabindex="-1" role="dialog" id="register">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Register to receive movie deals</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="firstname">First Name</label>
+                            <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="text" class="form-control" id="password" placeholder="Password">
+                        </div>
+                    </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--End Form Modal-->
 
         <div class="container my-5">
             <ul class="nav nav-inline">
@@ -185,6 +243,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+    <script>
+        $('.popover-dismiss').popover({
+                trigger: 'focus'
+            })
+    </script>
+
+    <script>
+        $('#search').tooltip(options)
+    </script>    
+
 </body>
 
 </html>
